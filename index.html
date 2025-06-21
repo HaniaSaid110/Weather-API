@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2 text-light" href="#">Weather App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!-- start weather forecast -->
+    <section>
+        <div class="container mt-5">
+            <h1 class="text-center">Welcome to the Weather App</h1>
+            <p class="text-center">Get the latest weather updates for your location.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="city" class="form-label">Enter City Name</label>
+                        <input type="text" class="form-control bg-body-secondary" list="datalistOptions" id="search-input" placeholder="e.g. Alexandria">
+                        <datalist id="datalistOptions">
+                        </datalist>
+                    </div>                    
+                </div>
+            </div>
+            <div class="my-3">
+                <h2 class="my-2" id="city-info"></h2>
+                <h4 class="date-today"></h4>
+            </div>
+            <div class="row mb-3" id="weather-container">
+            </div>
+        </div>
+    </section>
+    <!-- end weather forecast -->
+    <!-- start additional info -->
+    <section class="additional-info my-3">
+        <div class="container">
+            <h2 class="text-center my-4">Additional Information</h2>
+            <div class="row" id="additional-info">
+                <div class="col-md-3">
+                    <div class="card text-center text-bg-secondary mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Humidity</h5>
+                            <p class="humidity"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center text-bg-secondary mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Precipitation</h5>
+                            <p class="precipitation"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center text-bg-secondary mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Sunrise</h5>
+                            <p class="sunrise"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center text-bg-secondary mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Sunset</h5>
+                            <p class="sunset"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end additional info -->
+    <!-- start footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2023 Weather App. All rights reserved.</p>
+    </footer>
+    <!-- end footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

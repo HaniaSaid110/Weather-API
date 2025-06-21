@@ -92,7 +92,3 @@ const dayOfMonthNumber = now.getDate();
 // To get the name of the day of the week:
 const daysOfWeekNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const currentDayName = daysOfWeekNames[dayOfWeekNumber];
-
-
-console.log(`Today is ${currentDayName}, the ${dayOfMonthNumber}th of the month.`);
-console.log(`tomorrow is ${daysOfWeekNames[(dayOfWeekNumber + 1) % 7]}, the ${dayOfMonthNumber + 1}th of the month.`);

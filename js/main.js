@@ -11,7 +11,7 @@ let sunset = document.querySelector('.sunset');
 //fetch api
 function fetchWeather(city = `alexandria`) {
     weatherContainer.innerHTML = '';
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=6447c7490a4545a38c121929252106&q=${city}&days=3&aqi=no&alerts=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=6447c7490a4545a38c121929252106&q=${city}&days=3&aqi=no&alerts=no`)
     .then(res => res.json())
     .then(data => {console.log(data);
         cityInfo.textContent = `${data.location.name.charAt(0).toUpperCase() + data.location.name.slice(1)}, ${data.location.country}`;
